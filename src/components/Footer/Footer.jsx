@@ -10,7 +10,7 @@ function Footer() {
         <Flex w={"full"} justifyContent={"center"} bg={"#F7F1F1"} p={"50px"}>
             <Flex maxW={"1500px"} w={"full"} justifyContent={"space-between"}>
                 <Flex flexDir={"column"} >
-            <Text fontSize={"35px"} fontFamily={"Alex Brush"} textAlign={"center"}> L O G </Text>
+            <Text fontSize={"35px"} fontFamily={"Alex Brush"} textAlign={"center"}> L O G O</Text>
             <Text fontSize={"40px"} fontFamily={"Alex Brush"} textAlign={"center"}> Asha Wedding</Text>
 
             </Flex>

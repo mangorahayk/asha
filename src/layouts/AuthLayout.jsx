@@ -8,8 +8,8 @@ const AuthLayout = () => {
     return (
         <Flex w={'full'} direction={'column'}> 
         <Header />
-            <Outlet /> 
-            <Footer />       
+             <Outlet /> 
+           <Footer />       
         </Flex>
     );
 }

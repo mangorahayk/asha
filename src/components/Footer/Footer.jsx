@@ -8,13 +8,13 @@ import './style.css'
 function Footer() {
     return (
         <Flex w={"full"} justifyContent={"center"} bg={"#F7F1F1"} p={"50px"}>
-            <Flex maxW={"1500px"} w={"full"} justifyContent={"space-between"}>
+            <Flex maxW={"1500px"} w={"full"} justifyContent={"space-between"} flexDir={["column", "column", "column", "row"]}>
                 <Flex flexDir={"column"} >
-            <Text fontSize={"35px"} fontFamily={"Alex Brush"} textAlign={"center"}> L O G </Text>
+            <Text fontSize={"35px"} fontFamily={"Alex Brush"} textAlign={"center"}> L O G O</Text>
             <Text fontSize={"40px"} fontFamily={"Alex Brush"} textAlign={"center"}> Asha Wedding</Text>
 
             </Flex>
-            <Flex gap={"60px"}>
+            <Flex gap={"60px"} flexDir={["column", "column", "column", "row"]} pt={["70px", "70px", "70px", '0']}>
                
                 <Flex flexDir={"column"} alignItems={"start"}>
                     <Text letterSpacing={"2px"} fontWeight={"600"} pb={"5px"}>Contact Us</Text>
@@ -26,7 +26,7 @@ function Footer() {
                         <Instagram className='inst' />
                     </Flex>
                 </Flex>
-                <Flex borderLeft={"1px solid #E0C8C8"}></Flex>
+                <Flex borderLeft={"1px solid #E0C8C8"} borderBottom={["1px solid #E0C8C8"]}></Flex>
                 <Flex flexDir={"column"} alignItems={"start"}>
                     <Text letterSpacing={"2px"} fontWeight={"600"} pb={"5px"}>Hours</Text>
                     <Button variant={"base"} p={"0"} m={"0"}>Mon - Tue: 12PM–8PM</Button>
@@ -36,7 +36,7 @@ function Footer() {
                 </Flex>
                 <Flex borderLeft={"1px solid #E0C8C8"}></Flex>
 
-                <Flex flexDir={"column"} alignItems={"start"}>
+                <Flex flexDir={"column"} alignItems={"start"} display={["none", "none", "none", "flex"]}>
                     <Text letterSpacing={"2px"} fontWeight={"600"} pb={"5px"}>More Info</Text>
                     <Button variant={"base"} p={"0"} m={"0"}>Weddings</Button>
                     <Button variant={"base"} p={"0"} m={"0"}>Dresses</Button>

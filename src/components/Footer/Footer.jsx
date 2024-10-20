@@ -7,11 +7,11 @@ import './style.css'
 
 function Footer() {
     return (
-        <Flex w={"full"} justifyContent={"center"} bg={"#F7F1F1"} p={"50px"}>
+        <Flex w={"full"} justifyContent={"center"} bg={"#F7F1F1"} p={"50px"} id='contact'>
             <Flex maxW={"1500px"} w={"full"} justifyContent={"space-between"} flexDir={["column", "column", "column", "row"]}>
                 <Flex flexDir={"column"} >
-            <Text fontSize={"35px"} fontFamily={"Alex Brush"} textAlign={"center"}> L O G O</Text>
-            <Text fontSize={"40px"} fontFamily={"Alex Brush"} textAlign={"center"}> Asha Wedding</Text>
+            <Text fontSize={"40px"} fontFamily={"Alex Brush"} textAlign={"center"}>Design By Ashya</Text>
+            <Text fontSize={"15px"} fontFamily={""} textAlign={"center"}>FOR YOUR EVENTS</Text>
 
             </Flex>
             <Flex gap={"60px"} flexDir={["column", "column", "column", "row"]} pt={["70px", "70px", "70px", '0']}>

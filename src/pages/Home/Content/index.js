@@ -30,19 +30,19 @@ function Content() {
                 <Flex w={"full"} p={"10px"} flexDir={"column"} top={"20%"} zIndex={100} pos={"absolute"} color={"white"}>
                     <Flex justifyContent={"center"} alignItems={"center"} gap={3}>
                         <Divider maxW={"500px"} w={"full"} />
-                        <Text > L O G O</Text>
+                        <Text fontFamily={"Alex Brush"} fontSize={"35px"}>Design By Ashya</Text>
                         <Divider maxW={"500px"} w={"full"} />
 
                     </Flex>
 
                     <Flex flexDir={"column"} p={"90px"}>
-                        <Text textAlign={"center"} fontSize={"100px"} letterSpacing={"20px"} fontFamily={"Fredericka the Great"}>LOREM</Text>
-                        <Text textAlign={"center"} fontSize={"20px"} fontFamily={"Nunito"} >Lorem Ipsum dolor sit amet</Text>
+                        <Text textAlign={"center"} fontSize={"75px"} letterSpacing={"15px"} fontFamily={"Fredericka the Great"}>FOR YOUR EVENTS </Text>
+                        <Text textAlign={"center"} fontSize={"22px"} fontFamily={"Nunito"} >Let your special events shine with us</Text>
                     </Flex>
                     <Flex flexDir={"column"}>
                         <Flex justifyContent={"center"} alignItems={"center"} gap={3} p={"10px 0 0 0"} >
                             <Divider maxW={"500px"} w={"full"} />
-                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Asha Wedding</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Ashya Wedding</Text>
                             <Divider maxW={"500px"} w={"full"} />
                         </Flex>
                         <Flex justifyContent={"center"} >
@@ -56,7 +56,7 @@ function Content() {
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} p={"70px"}>
                         <Flex w={"1100px"} justifyContent={"space-between"} >
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>DRESSES </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>BAPTISMS </Text>
                                 <CustomBtn title={"DISCOVER"} onclick={null} />
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>

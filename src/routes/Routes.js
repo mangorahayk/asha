@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import AuthLayout from '../layouts/AuthLayout';
 import Home from '../pages/Home';
-import DressesPage from '../pages/DressesPage';
+import WeddingsPage from '../pages/WeddingsPage';
 
 
 export const router = createBrowserRouter([
@@ -14,8 +14,8 @@ export const router = createBrowserRouter([
                 path: "/"
             },
             {
-                element:<DressesPage />,
-                path:"/dresses"
+                element:<WeddingsPage />,
+                path:"/weddings"
             }
         ]
     }

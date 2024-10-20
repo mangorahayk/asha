@@ -41,6 +41,14 @@ const Button = defineStyleConfig({
     border:"1px solid white",
     fontSize:"14px",
     letterSpacing:"1px",
+  },
+  more:{
+    border:"1px solid black",
+    fontWeight:500,
+    p:"24px 35px",
+    borderRadius:"0px",
+    transition:"0.7s",
+    _hover:{color:"white", bg:"black"}
   }
 },
 

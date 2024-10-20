@@ -1,0 +1,11 @@
+.navLinkBtns {
+    border:none;
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:14px;
+    transition: 0.3s;
+    align-items: center;
+}
+.navLinkBtns:hover{ 
+    color: #CEA300;
+}

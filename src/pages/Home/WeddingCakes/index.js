@@ -1,31 +1,42 @@
 import React from 'react';
 import { Button, Divider, Flex, Image, Text } from '@chakra-ui/react';
 import tarosik from '../../../assets/image/tarosik.jpg'
-
+import Cake from '../../../assets/image/cake.jpg'
 
 function WeddingCakes() {
     return (
         <Flex w={"full"}>
             <Flex w={"full"} alignItems={"center"} p={"40px"} flexDir={"column"} display={["none", "none", "none", "flex"]}>
                 <Flex w={"full"} alignItems={"center"} gap={4} justifyContent={"center"} >
-                    <Divider maxW={"770px"} borderColor={"black"} />
-                    <Text fontSize={"28px"} fontFamily={"sans"}>WEDDINGS</Text>
-                    <Divider maxW={"770px"} borderColor={"black"} />
+                    <Divider maxW={"740px"} borderColor={"black"} />
+                    <Text fontSize={"28px"} fontFamily={"sans"}>OTHER PREPORATIONS</Text>
+                    <Divider maxW={"740px"} borderColor={"black"} />
                 </Flex>
-                <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} mt={"40px"}>
-                    <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
-                        <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>WeddingCakes Organization</Text>
-                        <Text  textAlign={"center"} fontSize={"17px"} overflow={"hidden"} textOverflow={"ellipsis"}>
-                            Ստեղծե՛ք Ձեր երազանքի հարսանիքը մեզ հետ: Design by Ashya **ում մենք հավատում ենք, որ յուրաքանչյուր մանրուք կարևոր է ձեր հատուկ օրվա համար: Բացահայտեք հարսանեկան աքսեսուարների մեր ապշեցուցիչ հավաքածուն՝ էլեգանտ շղարշներից և նրբագեղ թիարներից մինչև անհատականացված դեկոր և գեղեցիկ նվերներ:
+                <Flex maxW={"1450px"} w={"full"} justifyContent={"space-between"} mt={"40px"}>
+                    <Flex flexDir={"column"} gap={5}>
+                    <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>Wedding Cakes</Text>
 
-                            ✨ Ինչու՞ ընտրել մեզ:
-                            - Անհատականացման ընտրանքներ՝ ձեր թեմային համապատասխանելու համար
-                            - Բացառիկ հաճախորդների սպասարկում՝ պլանավորումը հեշտացնելու համար
-                            Գեղեցիկ ...
-                        </Text>
+                    <Image src={Cake} w={"450px"} h={"450px"} objectFit={"cover"} />
+                    <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
                         <Button variant={"more"}>LEARN MORE</Button>
                     </Flex>
-                    <Image src={tarosik} w={"650px"} h={"700px"} objectFit={"cover"} />
+                    </Flex>
+                    <Flex flexDir={"column"}gap={5}>
+                    <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>Annuals</Text>
+
+                    <Image src={tarosik} w={"450px"} h={"450px"} objectFit={"cover"} />
+                    <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
+                        <Button variant={"more"}>LEARN MORE</Button>
+                    </Flex>
+                    </Flex>
+                    <Flex flexDir={"column"} gap={5}>
+                    <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>Decorations</Text>
+
+                    <Image src={tarosik} w={"450px"} h={"450px"} objectFit={"cover"} />
+                    <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
+                        <Button variant={"more"}>LEARN MORE</Button>
+                    </Flex>
+                    </Flex>
                 </Flex>
             </Flex>
             <Flex w={"full"} alignItems={"center"} pt={"40px"} flexDir={"column"} display={["flex", "flex", "flex", "none"]}>

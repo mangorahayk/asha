@@ -55,8 +55,8 @@ function Content() {
 
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} p={"70px"}>
                         <Flex w={"1100px"} justifyContent={"space-between"} >
-                            <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>BAPTISMS </Text>
+                        <Flex flexDir={"column"} alignItems={"center"}>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>ABOUT US </Text>
                                 <CustomBtn title={"DISCOVER"} onclick={null} />
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
@@ -65,10 +65,10 @@ function Content() {
 
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>ABOUT US </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>BAPTISMS </Text>
                                 <CustomBtn title={"DISCOVER"} onclick={null} />
-
                             </Flex>
+                           
                         </Flex>
                     </Flex>
                 </Flex>
@@ -80,20 +80,25 @@ function Content() {
                 <Flex w={"full"} p={"10px"} flexDir={"column"} top={"15%"} zIndex={100} pos={"absolute"} color={"white"}>
                     <Flex justifyContent={"center"} alignItems={"center"} gap={3}>
                         <Divider maxW={"500px"} w={"full"} />
-                        <Text > L</Text>
+                        <Flex gap={2} fontSize={"29px"}>
+                        <Text fontFamily={"Alex Brush"}>Design</Text>
+                        <Text fontFamily={"Alex Brush"}>By</Text>
+                        <Text fontFamily={"Alex Brush"}>Ashya</Text>
+                        </Flex>
                         <Divider maxW={"500px"} w={"full"} />
 
                     </Flex>
 
                     <Flex w={"full"} flexDir={"column"} p={"70px"} alignItems={"center"}>
-                        <Text textAlign={"center"} fontSize={"55px"} letterSpacing={"15px"} fontFamily={"Fredericka the Great"}>LOREM</Text>
-                        <Text textAlign={"center"} fontSize={"19px"} fontFamily={"Nunito"} >Lorem Ipsum dolor sit amet</Text>
+                        <Text textAlign={"center"} fontSize={"55px"} letterSpacing={"15px"} fontFamily={"Fredericka the Great"}>FOR YOUR EVENTS</Text>
+                        <Text textAlign={"center"} fontSize={"19px"} fontFamily={"Nunito"} >Let your special events shine with us</Text>
                     </Flex>
                     <Flex w={"full"} flexDir={"column"}>
                         <Flex w={"full"} justifyContent={"center"} alignItems={"center"} gap={3} p={"10px 0 0 0"} >
-                            <Divider maxW={"93px"} w={"full"} />
-                            <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Asha Wedding</Text>
-                            <Divider maxW={"93px"} w={"full"} />
+                            <Divider maxW={"500px"} w={"full"} />
+                            <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Asha</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Wedding</Text>
+                            <Divider maxW={"500px"} w={"full"} />
                         </Flex>
                         <Flex justifyContent={"center"} >
                             <Star />
@@ -104,7 +109,7 @@ function Content() {
                     </Flex>
 
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} pt={"90px"}>
-                        <Flex maxW={"1100px"} w={"full"} justifyContent={"space-between"} >
+                        <Flex maxW={"1100px"} w={"full"} justifyContent={"space-around"} >
                             <Flex flexDir={"column"} alignItems={"center"}>
                                 <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"}>DRESSES </Text>
                               

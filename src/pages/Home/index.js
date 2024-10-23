@@ -2,7 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import React from 'react';
 import Content from './Content';
 import Dresses from './Design';
-import WeddingCakes from './WeddingCakes';
+import Other from './Other';
 import Annuals from './Annuals';
 import Baptisms from './Baptism';
 import AboutUs from './AboutUs';
@@ -14,11 +14,8 @@ const Home = () => {
             <Content />
             <AboutUs />
             <Weddings />
-            {/* <Weddings /> */}
             <Baptisms />
-            <WeddingCakes />
-            {/* <Annuals /> */}
-            {/* <Dresses /> */}
+            <Other />
         </Flex>
     );
 }

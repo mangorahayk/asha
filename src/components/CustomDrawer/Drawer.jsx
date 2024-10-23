@@ -37,42 +37,60 @@ function CustomDrawer() {
                 <DrawerContent>
                     <DrawerCloseButton />
 
-                    <DrawerBody fontFamily={"Montserrat"}>
+                    <DrawerBody fontFamily={"sans-serif"}>
                         <Flex alignItems={"start"} flexDir={"column"} gap={4}
                         >
-                        <ScrollLink to='aboutus'
-                                    className='navLinkFooter footerHover'
-                                    smooth={true}
-                                    duration={500}
+                            <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={800}
+                                onClick={onClose}
+
+                                to='weddings'
+                            >WEDDINGS</ScrollLink>
+                            <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={900}
                                     onClick={onClose}
-                                    offset={-25}>О нас</ScrollLink>
-                                <ScrollLink to={"work"}
-                                    className='navLinkFooter footerHover'
-                                    smooth={true}
-                                    duration={500}
+
+                                to='baptisms'
+                            >BAPTISMS</ScrollLink>
+                            <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={800}
                                     onClick={onClose}
-                                    offset={-25}>Работы</ScrollLink>
-                                <ScrollLink to={"specialequipment"}
-                                    className='navLinkFooter footerHover'
-                                    smooth={true}
-                                    offset={50}
+
+                                to='aboutus'
+                            >ABOUT US</ScrollLink>
+
+                          
+                            <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={1200}
                                     onClick={onClose}
-                                    duration={500}>
-                                    Спецтехника
-                                </ScrollLink>
-                                <ScrollLink to={"services"}
-                                    className='navLinkFooter footerHover'
-                                    smooth={true}
-                                    duration={500}
+
+                                to='other'
+                            >ANNUALS</ScrollLink>
+                            <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={1500}
                                     onClick={onClose}
-                                >Наши услуги</ScrollLink>
-                                <ScrollLink to={"collectiv"}
-                                    className='navLinkFooter footerHover'
-                                    smooth={true}
-                                    duration={500}
-                                    offset={50}
+
+                                to='contact'
+                            >CONTACT</ScrollLink>
+                              <ScrollLink className='navLinkBtns'
+                                smooth={true}
+                                offset={-47}
+                                duration={1200}
                                     onClick={onClose}
-                                >Коллектив</ScrollLink>
+
+                                to='other'
+                            >CAKES</ScrollLink>
+                            <Button variant={"base"} letterSpacing={"1.7px"}>EN</Button>
                         </Flex>
                     </DrawerBody>
 

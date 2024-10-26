@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import { Flex, Text, Image, Button } from '@chakra-ui/react';
 import Cake from '../../assets/image/cake.jpg'
 import Cake2 from '../../assets/image/cake2.jpg'
@@ -8,9 +8,13 @@ import Annual1 from '../../assets/image/tarosik.jpg'
 import Annual2 from '../../assets/image/baptism6.jpg'    
 import Annual3 from '../../assets/image/weddingimg5.jpg'    
 import Annual4 from '../../assets/image/Favor4.jpg'    
+import ScrollToTop from '../../components/TopScroll/TopScroll';
 
 
 function Preporations(props) {
+
+    ScrollToTop()
+
     return (
         <Flex w={"full"} justifyContent={"center"} mt={"70px"}>
             <Flex w={"full"} flexDir={"column"} alignItems={"center"}>

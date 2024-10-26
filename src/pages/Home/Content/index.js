@@ -9,11 +9,14 @@ import placeMobile2 from '../../../assets/image/0005-ParadiseOpenHouse_LittleBlu
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomBtn from "../../../components/CustomBtn/CustomBtn";
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 function Content() {
+    const navigate = useNavigate()
+
     const settings = {
         dots: true,
         infinite: true,
@@ -45,7 +48,7 @@ function Content() {
                         <Flex justifyContent={"center"} alignItems={"center"} gap={3} p={"10px 0 0 0"} >
                             <Divider maxW={"500px"} w={"full"} />
                             <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Ashya</Text>
-                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Wedding</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Design</Text>
                             <Divider maxW={"500px"} w={"full"} />
                         </Flex>
                         <Flex justifyContent={"center"} >
@@ -60,16 +63,16 @@ function Content() {
                         <Flex w={"1100px"} justifyContent={"space-between"} >
                         <Flex flexDir={"column"} alignItems={"center"}>
                                 <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>ABOUT US </Text>
-                                <CustomBtn title={"DISCOVER"} onclick={null} />
+                                <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/aboutus")} />
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
                                 <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>WEDDINGS </Text>
-                                <CustomBtn title={"DISCOVER"} onclick={null} />
+                                <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/weddings")} />
 
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
                                 <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>BAPTISMS </Text>
-                                <CustomBtn title={"DISCOVER"} onclick={null} />
+                                <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/baptisms")} />
                             </Flex>
                            
                         </Flex>
@@ -114,15 +117,15 @@ function Content() {
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} pt={"90px"}>
                         <Flex maxW={"1100px"} w={"full"} justifyContent={"space-around"} >
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"}>DRESSES </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"2px"}    onClick={()=>navigate("/aboutus")}>ABOUT US </Text>
                               
                             </Flex>
-                            <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"}>WEDDINGS </Text>
+                            <Flex flexDir={"column"} alignItems={"center"}  pr={"10px"} pl={"10px"} >
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"} onClick={()=>navigate("/weddings")}>WEDDINGS </Text>
 
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"}>ABOUT US </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"} onClick={()=>navigate("/baptisms")}>BAPTISMS </Text>
                             </Flex>
                         </Flex>
                     </Flex>

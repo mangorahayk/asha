@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Other() {
-
+  
     const navigate = useNavigate()
+    
 
     return (
         <Flex w={"full"} id='other'>
@@ -24,7 +25,7 @@ function Other() {
 
                     <Image src={Cake} w={"490px"} h={"490px"} objectFit={"cover"} />
                     <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
-                        <Button variant={"more"} onClick={()=>navigate("/preporations")}>LEARN MORE</Button>
+                        <Button variant={"more"} onClick={()=>navigate("/preporations")} id="cake">LEARN MORE</Button>
                     </Flex>
                     </Flex>
                     <Flex flexDir={"column"} gap={5} alignItems={"center"}>
@@ -32,7 +33,7 @@ function Other() {
 
                     <Image src={tarosik} w={"490px"} h={"490px"} objectFit={"cover"} />
                     <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
-                        <Button variant={"more"}>LEARN MORE</Button>
+                        <Button variant={"more"} onClick={()=>navigate("/preporations")}>LEARN MORE</Button>
                     </Flex>
                     </Flex>
                

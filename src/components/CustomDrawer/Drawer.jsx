@@ -40,7 +40,7 @@ function CustomDrawer() {
 
                     <DrawerBody fontFamily={"sans-serif"}>
                             <Button variant={"base"}  onClick={()=>navigate("/")} display={useLocation().pathname === "/" ? "none" : "flex"}>HOME</Button>
-                        <Flex alignItems={"start"} flexDir={"column"} gap={4} display={style}>
+                        <Flex alignItems={"start"} flexDir={"column"} gap={4} display={style} mt={"25px"}>
                         <ScrollLink className='navLinkBtns'
                                 smooth={true}
                                 offset={-47}

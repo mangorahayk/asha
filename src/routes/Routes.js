@@ -5,6 +5,8 @@ import Home from '../pages/Home';
 import WeddingsPage from '../pages/WeddingsPage';
 import BaptismsPage from '../pages/BaptismsPage';
 import Preporations from '../pages/PreporationsPage';
+import AboutUs from '../pages/Home/AboutUs';
+import AboutUsPage from '../pages/AboutUsPage';
 
 
 export const router = createBrowserRouter([
@@ -14,6 +16,10 @@ export const router = createBrowserRouter([
             {
                 element: <Home />,
                 path: "/"
+            },
+            {
+                element:<AboutUsPage />,
+                path:"/aboutus"
             },
             {
                 element:<WeddingsPage />,
@@ -27,6 +33,7 @@ export const router = createBrowserRouter([
                 element:<Preporations />,
                 path:"/preporations"
             }
+        
         ]
     }
 

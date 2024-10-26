@@ -1,9 +1,14 @@
 import React from 'react';
 import { Button, Divider, Flex, Image, Text } from '@chakra-ui/react';
 import tarosik from '../../../assets/image/tarosik.jpg'
-
-
+import WeddingImg from '../../../assets/image/weddingimg2.jpg'
+import BaptismImg from '../../../assets/image/baptism.jpg'
+import CakeImg from '../../../assets/image/cake2.jpg'
+import { useNavigate } from 'react-router-dom';
 function AboutUs() {
+
+    const navigate = useNavigate()
+
     return (
         <Flex w={"full"} id='aboutus'>
             <Flex w={"full"} alignItems={"center"} p={"40px"} flexDir={"column"} display={["none", "none", "none", "flex"]}>
@@ -15,18 +20,24 @@ function AboutUs() {
                 </Flex>
                 <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} mt={"40px"}>
                     <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
-                        <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>WeddingCakes Organization</Text>
+                        <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>About Us</Text>
                         <Text  textAlign={"center"} fontSize={"17px"} overflow={"hidden"} textOverflow={"ellipsis"}>
-                            Ստեղծե՛ք Ձեր երազանքի հարսանիքը մեզ հետ: Design by Ashya **ում մենք հավատում ենք, որ յուրաքանչյուր մանրուք կարևոր է ձեր հատուկ օրվա համար: Բացահայտեք հարսանեկան աքսեսուարների մեր ապշեցուցիչ հավաքածուն՝ էլեգանտ շղարշներից և նրբագեղ թիարներից մինչև անհատականացված դեկոր և գեղեցիկ նվերներ:
+                        Welcome to AshyaDesign, your ultimate destination for elegant wedding and baptism accessories, as well as beautifully designed event decorations. We believe that every celebration deserves to be extraordinary, and we are here to help you create memories that will last a lifetime.
 
-                            ✨ Ինչու՞ ընտրել մեզ:
-                            - Անհատականացման ընտրանքներ՝ ձեր թեմային համապատասխանելու համար
-                            - Բացառիկ հաճախորդների սպասարկում՝ պլանավորումը հեշտացնելու համար
-                            Գեղեցիկ ...
+We offer a stunning range of wedding accessories that reflect your unique style. Our collection includes everything from elegantly designed baskets, favors, candles, plates, lavash, crowns, and more… We will make your love story memorable.
+
+...
+
                         </Text>
-                        <Button variant={"more"}>LEARN MORE</Button>
+                        <Button variant={"more"} onClick={()=>navigate("/aboutus")}>LEARN MORE</Button>
                     </Flex>
-                    <Image src={tarosik} w={"650px"} h={"700px"} objectFit={"cover"} />
+                    <Flex w={"650px"} flexWrap={"wrap"}>
+                    <Image src={WeddingImg} w={"325px"} h={"350px"}  objectFit={"cover"} />
+                    <Image src={tarosik} w={"325px"} h={"350px"}  objectFit={"cover"} />
+                    <Image src={CakeImg} w={"325px"} h={"350px"}  objectFit={"cover"} />
+                    <Image src={BaptismImg} w={"325px"} h={"350px"}  objectFit={"cover"} />
+
+                    </Flex>
                 </Flex>
             </Flex>
             <Flex w={"full"} alignItems={"center"} pt={"40px"} flexDir={"column"} display={["flex", "flex", "flex", "none"]} p={"30px 10px"}>

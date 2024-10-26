@@ -13,15 +13,16 @@ import {
 } from '@chakra-ui/react'
 import { ReactComponent as Navbar } from '../../assets/svg/navbar.svg'
 import { Link as ScrollLink } from 'react-scroll'
-
+import { useNavigate, useLocation } from "react-router-dom"
 
 
 
 
 function CustomDrawer() {
+    const style = useLocation().pathname !== "/" ? "none" : "flex"
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
-
+    const navigate = useNavigate()
     return (
         <>
             <Button ref={btnRef} variant={"none"} colorScheme='teal' onClick={onOpen}>
@@ -38,13 +39,13 @@ function CustomDrawer() {
                     <DrawerCloseButton />
 
                     <DrawerBody fontFamily={"sans-serif"}>
-                        <Flex alignItems={"start"} flexDir={"column"} gap={4}
-                        >
-                            <ScrollLink className='navLinkBtns'
+                            <Button variant={"base"}  onClick={()=>navigate("/")} display={useLocation().pathname === "/" ? "none" : "flex"}>HOME</Button>
+                        <Flex alignItems={"start"} flexDir={"column"} gap={4} display={style}>
+                        <ScrollLink className='navLinkBtns'
                                 smooth={true}
                                 offset={-47}
-                                duration={800}
-                                onClick={onClose}
+                                duration={900}
+                                    onClick={onClose}
 
                                 to='weddings'
                             >WEDDINGS</ScrollLink>
@@ -90,8 +91,8 @@ function CustomDrawer() {
 
                                 to='other'
                             >CAKES</ScrollLink>
-                            <Button variant={"base"} letterSpacing={"1.7px"}>EN</Button>
                         </Flex>
+                            <Button variant={"base"} letterSpacing={"1.7px"} display={"block"}>EN</Button>
                     </DrawerBody>
 
 

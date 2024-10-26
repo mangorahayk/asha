@@ -17,10 +17,12 @@ function Baptisms() {
                         <Text fontSize={"28px"} fontFamily={"sans"}>BAPTISMS</Text>
                         <Divider maxW={"770px"} borderColor={"black"} />
                     </Flex>
-                    <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} mt={"40px"}>
+                    <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} mt={"40px"} flexWrap={"wrap"}>
+                    <Image src={Baptism} w={"650px"} h={"700px"} objectFit={"cover"} />
+                        
                         <Flex gap={5} flexDir={"column"} w={"450px"} alignItems={"center"} justifyContent={"center"}>
                             <Text fontFamily={"sans"} fontSize={"25px"} letterSpacing={"1px"}>Baptisms Organization</Text>
-                            <Text  fontSize={"17px"}>
+                            <Text  fontSize={"17px"} textAlign={["center", "center", "center", "start"]}>
                                 Mark a special day with our baptism accessories.
 
                                 Welcome to Design by Ashya, where we offer a beautiful selection of baptism accessories to make your child's unique day unforgettable. From exquisite baptism dresses and towels to stylish boxes and personalized gifts, we have everything you need to create lasting memories.
@@ -33,7 +35,6 @@ function Baptisms() {
                             </Text>
                             <Button variant={"more"} onClick={()=>navigate('/baptisms')}>LEARN MORE</Button>
                         </Flex>
-                        <Image src={Baptism} w={"650px"} h={"700px"} objectFit={"cover"} />
                     </Flex>
                 </Flex>
                 <Flex w={"full"} alignItems={"center"} pt={"40px"} flexDir={"column"} display={["flex", "flex", "flex", "none"]} p={"30px 10px"}>

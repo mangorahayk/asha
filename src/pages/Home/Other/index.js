@@ -49,7 +49,7 @@ function Other() {
                     <Flex alignItems={"center"} flexDir={"column"} gap={5}>
                     <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>Wedding Cakes</Text>
 
-                    <Image src={Cake} objectFit={"cover"} maxW={"450px"} />
+                    <Image src={Cake} objectFit={"cover"} maxW={"440px"} w={"full"}/>
                     <Flex gap={5} flexDir={"column"} maxW={"450px"} alignItems={"center"} justifyContent={"center"}>
                         <Button variant={"more"} onClick={()=>navigate("/preporations")}>LEARN MORE</Button>
                     </Flex>
@@ -61,7 +61,7 @@ function Other() {
                     <Flex alignItems={"center"} flexDir={"column"} gap={5}>
                     <Text textAlign={"center"} fontFamily={"sans"} fontSize={"25px"}  letterSpacing={"1px"}>Annuals</Text>
 
-                    <Image src={tarosik} objectFit={"cover"} maxW={"450px"} />
+                    <Image src={tarosik} objectFit={"cover"} maxW={"440px"} w={"full"}/>
                     <Flex gap={5} flexDir={"column"} maxW={"450px"} alignItems={"center"} justifyContent={"center"}>
                         <Button variant={"more"} onClick={()=>navigate("/preporations")}>LEARN MORE</Button>
                     </Flex>

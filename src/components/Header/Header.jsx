@@ -91,7 +91,7 @@ function Header() {
                     <CustomDrawer />
                 </Flex>
                 <Flex gap={2} zIndex={"100"}>
-                    <Text fontFamily={"Alex Brush"} fontSize={"29px"}>Ashya</Text>
+                    <Text fontFamily={"Alex Brush"} fontSize={"29px"} onClick={()=>navigate('/')}>Ashya</Text>
 
                 </Flex>
             </Flex>

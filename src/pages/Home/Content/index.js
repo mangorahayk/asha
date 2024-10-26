@@ -30,7 +30,9 @@ function Content() {
                 <Flex w={"full"} p={"10px"} flexDir={"column"} top={"20%"} zIndex={100} pos={"absolute"} color={"white"}>
                     <Flex justifyContent={"center"} alignItems={"center"} gap={3}>
                         <Divider maxW={"500px"} w={"full"} />
-                        <Text fontFamily={"Alex Brush"} fontSize={"35px"}>Design By Ashya</Text>
+                        <Text fontFamily={"Alex Brush"} fontSize={"35px"}>Design</Text>
+                        <Text fontFamily={"Alex Brush"} fontSize={"35px"}>By</Text>
+                        <Text fontFamily={"Alex Brush"} fontSize={"35px"}>Ashya</Text>
                         <Divider maxW={"500px"} w={"full"} />
 
                     </Flex>
@@ -42,7 +44,8 @@ function Content() {
                     <Flex flexDir={"column"}>
                         <Flex justifyContent={"center"} alignItems={"center"} gap={3} p={"10px 0 0 0"} >
                             <Divider maxW={"500px"} w={"full"} />
-                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Ashya Wedding</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Ashya</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"40px"}>Wedding</Text>
                             <Divider maxW={"500px"} w={"full"} />
                         </Flex>
                         <Flex justifyContent={"center"} >

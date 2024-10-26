@@ -21,3 +21,14 @@
     color: white;
     background: #000;
 }
+.links {
+    border:none;
+    font-weight:400;
+    letter-spacing:1px;
+    font-size:14px;
+    transition: 0.2s;
+}
+.links:hover{
+    color:#CEA300;
+     
+}

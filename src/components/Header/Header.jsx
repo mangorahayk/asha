@@ -62,7 +62,7 @@ function Header() {
 
                  
                 </Flex>
-                <Text fontFamily={"Alex Brush"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"}>Design By Ashya</Text>
+                <Text fontFamily={"Alex Brush"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"} _hover={{color:"#CBA373"}}>AshyaDesign</Text>
 
                 <Flex gap={"30px"} alignItems={"center"}>
                     <ScrollLink className='navLinkBtns'
@@ -90,8 +90,8 @@ function Header() {
                 <Flex gap={2}>
                     <CustomDrawer />
                 </Flex>
-                <Flex gap={2} zIndex={"100"}>
-                    <Text fontFamily={"Alex Brush"} fontSize={"29px"} onClick={()=>navigate('/')}>Ashya</Text>
+                <Flex zIndex={"100"}>
+                    <Text fontFamily={"Alex Brush"} fontSize={"23px"} onClick={()=>navigate('/')}>AshyaDesign</Text>
 
                 </Flex>
             </Flex>

@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { Button, Flex, Text } from '@chakra-ui/react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Button, Flex, Text, } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 import { ReactComponent as Navbar } from '../../assets/svg/navbar.svg'
 import CustomDrawer from '../CustomDrawer/Drawer';
 import { Link as ScrollLink } from 'react-scroll'
+import SelectLang from '../SelectLang/SelectLang';
+import { useTranslation } from 'react-i18next';
+
+
+
 
 import './style.css'
 
@@ -11,7 +16,7 @@ import './style.css'
 
 
 function Header() {
-    
+
     // const style = useLocation().pathname !== "/weddings" && "/baptisms" ? "black" : "white"
     // let [bacG, setBacG] = useState(false)
     // let [bigScroll, setBigScroll] = useState(false)
@@ -30,11 +35,12 @@ function Header() {
 
     // }
 
-    
+
     // window.addEventListener('scroll', changeBg)
-    
+
     // bigScroll ?   "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0.8)" 
-    let navigate = useNavigate()
+    const navigate = useNavigate()
+    const { t } = useTranslation()
 
     return (
         <Flex w={"full"} maxW={"1920px"} justifyContent={"center"} h={"70px"} p={"10px"} pos={"fixed"} zIndex={900} transition={"0.3s"} bg={"rgba(0,0,0, 0.8)"} color={"white"}  >
@@ -44,25 +50,30 @@ function Header() {
                         smooth={true}
                         offset={-47}
                         duration={800}
+                        to='aboutus'
+                    >{t("btn.aboutus")}</ScrollLink>
+                    <ScrollLink className='navLinkBtns'
+                        smooth={true}
+                        offset={-47}
+                        duration={800}
                         to='weddings'
-                    >WEDDINGS</ScrollLink>
+                    >{t('btn.weddings')}</ScrollLink>
                     <ScrollLink className='navLinkBtns'
                         smooth={true}
                         offset={-47}
                         duration={800}
                         to='baptisms'
-                    >BAPTISMS</ScrollLink>
-            <ScrollLink className='navLinkBtns'
-                        smooth={true}
-                        offset={-47}
-                        duration={800}
-                        to='aboutus'
-                    >ABOUT US</ScrollLink>
+                    >{t("btn.baptisms")}</ScrollLink>
 
 
-                 
+
+
                 </Flex>
-                <Text fontFamily={"Alex Brush"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"} _hover={{color:"#CBA373"}}>AshyaDesign</Text>
+
+                <Flex justifyContent={"center"} alignItems={"center"}>
+                    <Text fontFamily={"Alex Brush"} textAlign={"center"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"} _hover={{ color: "#CBA373" }}>AshyaDesign</Text>
+
+                </Flex>
 
                 <Flex gap={"30px"} alignItems={"center"}>
                     <ScrollLink className='navLinkBtns'
@@ -70,20 +81,20 @@ function Header() {
                         offset={-47}
                         duration={800}
                         to='other'
-                    >CAKES</ScrollLink>
+                    >{t("btn.cakes")}</ScrollLink>
                     <ScrollLink className='navLinkBtns'
                         smooth={true}
                         offset={-47}
                         duration={800}
                         to='other'
-                    >ANNUALS</ScrollLink>
-                  <ScrollLink className='navLinkBtns'
+                    >{t("btn.favours")}</ScrollLink>
+                    <ScrollLink className='navLinkBtns'
                         smooth={true}
                         offset={-47}
                         duration={1400}
                         to='contact'
-                    >CONTACT</ScrollLink>
-                    <Button variant={"base"} letterSpacing={"1.7px"}>EN</Button>
+                    >{t("btn.contact")}</ScrollLink>
+                    <SelectLang />
                 </Flex>
             </Flex>
             <Flex justifyContent={"space-between"} w={"full"} alignItems={"center"} display={["flex", "flex", "flex", "none"]} >
@@ -91,7 +102,7 @@ function Header() {
                     <CustomDrawer />
                 </Flex>
                 <Flex zIndex={"100"}>
-                    <Text fontFamily={"Alex Brush"} fontSize={"23px"} onClick={()=>navigate('/')}>AshyaDesign</Text>
+                    <Text fontFamily={"Alex Brush"} fontSize={"23px"} onClick={() => navigate('/')}>AshyaDesign</Text>
 
                 </Flex>
             </Flex>

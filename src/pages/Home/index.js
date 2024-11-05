@@ -7,8 +7,12 @@ import Annuals from './Annuals';
 import Baptisms from './Baptism';
 import AboutUs from './AboutUs';
 import Weddings from './Weddings';
+import ScrollToTop from '../../components/TopScroll/TopScroll';
 
 const Home = () => {
+
+    ScrollToTop()
+
     return (
         <Flex w={"full"} justifyContent={"center"} flexDir={"column"}>
             <Content />

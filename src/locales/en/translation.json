@@ -1,0 +1,37 @@
+{
+    "home": {
+        "aboutus": {
+            "about": "ABOUT",
+            "us": "US",
+            "littleText": "Welcome to AshyaDesign, your ultimate destination for elegant wedding and baptism accessories, as well as beautifully designed event decorations. We believe that every celebration deserves to be extraordinary, and we are here to help you create memories that will last a lifetime. We offer a stunning range of wedding accessories that reflect your unique style. Our collection includes everything from elegantly designed baskets, favors, candles, plates, lavash, crowns, and more… We will make your love story memorable. ... ",
+            "textPg" : "Welcome to AshyaDesign, your ultimate destination for elegant wedding and baptism accessories, as well as beautifully designed event decorations. We believe that every celebration deserves to be extraordinary, and we are here to help you create memories that will last a lifetime.We offer a stunning range of wedding accessories that reflect your unique style. Our collection includes everything from elegantly designed baskets, favors, candles, plates, bread covers, crowns, and more… We will make your love story memorable.\nBaptisms\n Celebrate the sacred occasion of baptism with our charming accessories, designed to honor faith and family. We provide a range of baptism candles, favors, towels, baskets, baptism clothes, and beautiful decorations.\nEvent Decorations, Cake Orders, BuffetsBeautifully organized marriage proposals, giant teddy bears, fairy tale characters—everything to make your day beautiful and unforgettable.We specialize in complete event decoration, creating cohesive and impressive environments that leave lasting good memories."
+        },
+        "weddings": {
+            "weddingOrg": "Weddings Organizations",
+            "littleText": "Create your dream wedding with us: Design by Ashya, where we believe that every detail is important for your special day. Discover our amazing collection of wedding accessories — from elegant veils and exquisite tiaras to personalized decor and beautiful gifts.\nWhy choose us? \nPersonalized options to match your themeExceptional customer service to ease your planningBeautiful and elegant baskets, decor, refined plates, personalized glass designs, boxes for Gata, lavash, and even boxes with rose petals. Floral arrangements with natural flowers are also available. We accept orders of any size. ...",
+            "textPg": "Create your dream wedding with us: Design by Ashya, where we believe that every detail is important for your special day. Discover our amazing collection of wedding accessories — from elegant veils and exquisite tiaras to personalized decor and beautiful gifts.\nWhy choose us? \nPersonalized options to match your themeExceptional customer service to ease your planningBeautiful and elegant baskets, decor, refined plates, personalized glass designs, boxes for Gata, lavash, and even boxes with rose petals. Floral arrangements with natural flowers are also available. We accept orders of any size. Schedule a consultation today and let us help you make your dream a reality Visit our Instagram page, Design by Ashya, and start your journey to the perfect wedding."
+        },
+        "baptisms": {
+            "baptismOrg": "Baptisms Organizations",
+            "littleText": "Mark a special day with our baptism accessories.Welcome to Design by Ashya, where we offer a beautiful selection of baptism accessories to make your child's unique day unforgettable. From exquisite baptism dresses and towels to stylish boxes and personalized gifts, we have everything you need to create lasting memories.Why choose us?Quality craftsmanship. Each detail is made with love and care to ensure your little one’s most important moment. Unique assortment. ...",
+            "textPg": "Mark a special day with our baptism accessories.Welcome to Design by Ashya, where we offer a beautiful selection of baptism accessories to make your child's unique day unforgettable. From exquisite baptism dresses and towels to stylish boxes and personalized gifts, we have everything you need to create lasting memories.Why choose us?Quality craftsmanship. Each detail is made with love and care to ensure your little one’s most important moment. Unique assortment. Discover original and stylish accessories that reflect your family's traditions. Visit us today and find the perfect accessories for this sacred event."
+        },
+        "other" : {
+            "other" : "OTHER",
+            "favoursText" : "Our favours are the perfect choice for wedding events. Create unique table decor using our boxes made from natural materials. They are ideal as a centerpiece that will capture your guests' attention.",
+            "cakesText" : "Celebrate your memorable day with our exquisite wedding cakes. At Design by Ashya, we believe that every love story deserves a sweet ending. Our custom wedding cakes are crafted with love and artistry to make your special day truly unforgettable. Choose from a variety of flavors, designs, and sizes that reflect your unique style and taste. Let us help you create a cake that not only looks stunning but also has a divine flavor. Schedule a consultation today and find out why we are the preferred choice for couples on the Design by Ashya Instagram page. Make your wedding dreams come true with a cake that is as unique as your love.",
+            "preporations" : "PREPORATIONS"
+            
+        }
+    },
+    "btn": {
+        "contact": "CONTACT",
+        "weddings": "WEDDINGS",
+        "baptisms": "BAPTISMS",
+        "aboutus": "ABOUT US",
+        "cakes": "CAKES",
+        "favours": "FAVOURS",
+        "discover": "DISCOVER",
+        "learnMore": "LEARN MORE"
+    }
+}

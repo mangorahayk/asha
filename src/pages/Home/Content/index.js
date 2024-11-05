@@ -10,21 +10,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomBtn from "../../../components/CustomBtn/CustomBtn";
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 
 
 function Content() {
+
     const navigate = useNavigate()
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 2000,
-        autoplaySpeed: 3000,
-    };
+    const { t } = useTranslation()
+
+
+
     return (
         <Flex top={0} pos={"relative"} w={"full"} justifyContent={"center"} overflow={"hidden"}>
             <Flex w={"full"} fontFamily={"serif"} pos={"relative"} display={["none", "none", "none", "flex"]}>
@@ -62,16 +60,16 @@ function Content() {
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} p={"70px"}>
                         <Flex w={"1100px"} justifyContent={"space-between"} >
                         <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>ABOUT US </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>{t('btn.aboutus').toUpperCase()}</Text>
                                 <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/aboutus")} />
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>WEDDINGS </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>{t('btn.weddings').toUpperCase()}</Text>
                                 <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/weddings")} />
 
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>BAPTISMS </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"35px"} letterSpacing={"6px"}>{t('btn.baptisms').toUpperCase()}</Text>
                                 <CustomBtn title={"DISCOVER"} onclick={()=>navigate("/baptisms")} />
                             </Flex>
                            
@@ -116,16 +114,17 @@ function Content() {
 
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} pt={"90px"}>
                         <Flex maxW={"1100px"} w={"full"} justifyContent={"space-around"} >
-                            <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"2px"}    onClick={()=>navigate("/aboutus")}>ABOUT US </Text>
+                            <Flex flexDir={"column"} alignItems={"center"} flexWrap={"nowrap"}>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"1px"}    onClick={()=>navigate("/aboutus")}>{t('home.aboutus.about').toUpperCase()} </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"1px"}    onClick={()=>navigate("/aboutus")}>{t('home.aboutus.us').toUpperCase()} </Text>
                               
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}  pr={"10px"} pl={"10px"} >
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"} onClick={()=>navigate("/weddings")}>WEDDINGS </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"2px"} onClick={()=>navigate("/weddings")}>{t('btn.weddings').toUpperCase()} </Text>
 
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"4px"} onClick={()=>navigate("/baptisms")}>BAPTISMS </Text>
+                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"2px"} onClick={()=>navigate("/baptisms")}>{t('btn.baptisms').toUpperCase()} </Text>
                             </Flex>
                         </Flex>
                     </Flex>

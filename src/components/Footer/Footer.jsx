@@ -4,12 +4,14 @@ import {ReactComponent as Facebook} from "../../assets/svg/facebook.svg"
 import {ReactComponent as Instagram} from "../../assets/svg/instagram.svg"
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { InstagramEmbed } from 'react-social-media-embed';
+import { useTranslation } from 'react-i18next';
+
 import './style.css'
 
 function Footer() {
 
     const navigate = useNavigate()
+    const { t } = useTranslation()
 
     return (
         <Flex w={"full"} justifyContent={"center"} bg={"#F7F1F1"} p={"50px"} id='contact'>
@@ -36,11 +38,11 @@ function Footer() {
 
                 <Flex flexDir={"column"} alignItems={"start"}>
                     <Text letterSpacing={"2px"} fontWeight={"600"} pb={"5px"}>More Info</Text>
-                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/aboutus")}>About us</Button>
-                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/weddings")}>Weddings</Button>
-                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/baptisms")}>Baptisms</Button>
-                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/preporations")}>Cakes</Button>
-                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/preporations")}>Favors</Button>
+                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/aboutus")}> {t("btn.aboutus")} </Button>
+                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/weddings")}> {t("btn.weddings")}</Button>
+                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/baptisms")}> {t("btn.baptisms")}</Button>
+                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/preporations")}> {t("btn.cakes")}</Button>
+                    <Button variant={"base"} p={"0"} m={"0"} fontSize={"16px"} onClick={()=>navigate("/preporations")}> {t("btn.favours")}</Button>
                 </Flex>
             </Flex>
             </Flex>

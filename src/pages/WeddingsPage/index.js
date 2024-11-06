@@ -51,8 +51,8 @@ function WeddingsPage(props) {
             <Flex>
 
             </Flex>
-            <Flex maxW={"1600px"} w={"full"} flexDir={"column"} p={"10px"}>
-                <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} mt={"40px"} flexDir={["column", "column", "column", "row"]}>
+            <Flex maxW={"1600px"} w={"full"} flexDir={"column"} p={"10px"} >
+                <Flex maxW={"1400px"} w={"full"} justifyContent={"space-around"} alignItems={"center"} mt={"40px"} flexDir={["column", "column", "column", "row"]}>
                     <Image src={Image1} w={"650px"} h={"700px"} objectFit={"cover"} display={["none", "none", "none", "flex"]} />
 
                     <Flex gap={5} flexDir={"column"} maxW={"450px"} w={"full"} alignItems={"center"} justifyContent={"center"}>
@@ -70,7 +70,7 @@ function WeddingsPage(props) {
                     </Flex>
                 </Flex>
                 <Flex w={"full"} justifyContent={"space-between"} p={"30px 0"} flexDir={["column", "column", "column", "row"]}>
-                  {/* <Swiper data={weddingSlider} /> */}
+                  <Swiper data={weddingSlider} />
                 </Flex>
             </Flex>
         </Flex>

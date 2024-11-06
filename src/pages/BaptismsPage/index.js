@@ -8,6 +8,7 @@ import Image5 from '../../assets/image/baptism6.jpg'
 import Image6 from '../../assets/image/baptismFavour.jpg'
 import ScrollToTop from '../../components/TopScroll/TopScroll';
 import { useTranslation } from 'react-i18next';
+import CustomSwiper from '../../components/CustomSwiper/CustomSwiper';
 
 
 function BaptismsPage(props) {
@@ -15,6 +16,30 @@ function BaptismsPage(props) {
     ScrollToTop()
 
     const {t} = useTranslation()
+
+    const baptismSlider = [
+        {
+            id: 1,
+            img: Image2
+        },
+
+        {
+            id: 2,
+            img: Image3
+        },
+        {
+            id: 3,
+            img: Image4
+        },
+        {
+            id: 4,
+            img: Image5
+        },
+        {
+            id: 5,
+            img: Image6
+        },
+    ]
 
     return (
         <Flex w={"full"} justifyContent={"center"} alignItems={"center"} mt={"70px"} flexDir={"column"}>
@@ -36,11 +61,7 @@ function BaptismsPage(props) {
                     </Flex>
                 </Flex>
                 <Flex w={"full"} justifyContent={"space-between"} p={"30px 0"}  flexDir={["column", "column", "column", "row"]}>
-                    <Image src={Image6} w={"310px"} objectFit={"cover"} h={"330px"} />
-                    <Image src={Image2} w={"310px"} objectFit={"cover"} h={"330px"} />
-                    <Image src={Image3} w={"310px"} objectFit={"cover"} h={"330px"} />
-                    <Image src={Image4} w={"310px"} objectFit={"cover"} h={"330px"} />
-                    <Image src={Image5} w={"310px"} objectFit={"cover"} h={"330px"} />
+                    <CustomSwiper data={baptismSlider} />
                 </Flex>
             </Flex>
         </Flex>

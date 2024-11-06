@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Image, Text, Divider, Button } from '@chakra-ui/react';
+import { Flex, Image, Text,  Button } from '@chakra-ui/react';
 import Image1 from '../../assets/image/baptismFav.webp'
 import Image2 from '../../assets/image/baptism.jpg'
 import Image3 from '../../assets/image/baptismCake.webp'

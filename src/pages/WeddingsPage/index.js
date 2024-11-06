@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import { Flex, Image, Text, Divider, Button } from '@chakra-ui/react';
+import React from 'react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import Image1 from '../../assets/image/weddingimg2.jpg'
 import Image3 from '../../assets/image/weddingimg3.jpg'
 import Image4 from '../../assets/image/weddingimg4.jpg'
 import Image5 from '../../assets/image/weddingimg5.jpg'
 import Image6 from '../../assets/image/weddingimg6.jpg'
-import { useLocation } from 'react-router-dom';
 import ScrollToTop from '../../components/TopScroll/TopScroll';
 import { Link as ScrollLink } from 'react-scroll'
 import Swiper from '../../components/CustomSwiper/CustomSwiper';

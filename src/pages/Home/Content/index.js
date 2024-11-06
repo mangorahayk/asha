@@ -1,10 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
-import { Button, Divider, Flex, Image, Text } from "@chakra-ui/react";
+import {  Divider, Flex, Image, Text } from "@chakra-ui/react";
 import { ReactComponent as Star } from '../../../assets/svg/star.svg'
-import { ReactComponent as RightArrow } from '../../../assets/svg/rightArrow.svg'
 import placeImg2 from '../../../assets/image/contentImg.jpg'
-import placeMobile from '../../../assets/image/mobileHall.jpg'
 import placeMobile2 from '../../../assets/image/0005-ParadiseOpenHouse_LittleBlueLemon.jpg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -100,7 +97,7 @@ function Content() {
                     <Flex w={"full"} flexDir={"column"}>
                         <Flex w={"full"} justifyContent={"center"} alignItems={"center"} gap={3} p={"10px 0 0 0"} >
                             <Divider maxW={"500px"} w={"full"} />
-                            <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Asha</Text>
+                            <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Ashya</Text>
                             <Text fontFamily={"Alex Brush"} fontSize={"28px"} flexWrap={"nowrap"}>Wedding</Text>
                             <Divider maxW={"500px"} w={"full"} />
                         </Flex>
@@ -115,9 +112,8 @@ function Content() {
                     <Flex w={"full"} alignItems={"center"} justifyContent={"center"} pt={"90px"}>
                         <Flex maxW={"1100px"} w={"full"} justifyContent={"space-around"} >
                             <Flex flexDir={"column"} alignItems={"center"} flexWrap={"nowrap"}>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"1px"}    onClick={()=>navigate("/aboutus")}>{t('home.aboutus.about').toUpperCase()} </Text>
-                                <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"1px"}    onClick={()=>navigate("/aboutus")}>{t('home.aboutus.us').toUpperCase()} </Text>
                               
+                               <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"1px"}>{t("btn.aboutus").toUpperCase()}</Text>
                             </Flex>
                             <Flex flexDir={"column"} alignItems={"center"}  pr={"10px"} pl={"10px"} >
                                 <Text fontFamily={"Fredericka the Great"} fontSize={"16px"} letterSpacing={"2px"} onClick={()=>navigate("/weddings")}>{t('btn.weddings').toUpperCase()} </Text>

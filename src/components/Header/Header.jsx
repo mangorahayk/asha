@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { Button, Flex, Text, } from '@chakra-ui/react';
+import React from 'react';
+import { Flex, Text, } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
-import { ReactComponent as Navbar } from '../../assets/svg/navbar.svg'
 import CustomDrawer from '../CustomDrawer/Drawer';
 import { Link as ScrollLink } from 'react-scroll'
 import SelectLang from '../SelectLang/SelectLang';

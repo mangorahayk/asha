@@ -4,7 +4,6 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
 import translationAm from '../locales/hy/translation.json'
 import translationEn from '../locales/en/translation.json'
-import translationRu from '../locales/ru/translation.json'
 
 // import ICU from "i18next-icu";
 
@@ -17,9 +16,7 @@ const resources = {
     en: {
       translation: translationEn
     },
-    ru : {
-        translation: translationRu
-    }
+  
   };
 
 i18n

@@ -71,7 +71,7 @@ function Header() {
                 </Flex>
 
                 <Flex justifyContent={"center"} alignItems={"center"}>
-                    <Text fontFamily={"Alex Brush"} textAlign={"center"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"} _hover={{ color: "#CBA373" }}>AshyaDesign</Text>
+                    <Text fontFamily={"Alex Brush"} textAlign={"center"} fontSize={"35px"} onClick={() => navigate('/')} cursor={"pointer"} _hover={{ color: "#CBA373" }} transition={"0.3s"}>AshyaDesign</Text>
 
                 </Flex>
 
